@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+
+int main() {
+	char str1[10];
+	char str2[10];
+	char *str;
+	int ans;
+
+	scanf("%s %s", &str1, &str2);
+	str = strcat(&str1, &str2);
+	ans = atoi(str);
+	printf("%d\n", ans * 2);
+	return 0;
+}
